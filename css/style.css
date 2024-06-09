@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 17px;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    min-height: 100vh;
+    background: url('../imagenes/inicio-fondo.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 17px;
+    font-style: normal;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: transparent;
+}
+.logo{
+    font-size: 45px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+
+.navbar a{
+    position: relative;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    font-optical-sizing: auto;
+    font-weight: 17px;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+
+}
+
+.botonCarrito {
+    background-color: transparent;
+    border:  1px solid #ECF2DF;
+    color: #ECF2DF; /* Texto verde */
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.botonCarrito:hover {
+    background-color: #ECF2DF; /* Fondo verde al pasar el mouse */
+    color: transparent; /* Texto blanco al pasar el mouse */
+}
